@@ -1,0 +1,366 @@
+/* Styling the react app */
+@import url("https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&display=swap");
+#root {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container h1 {
+  position: relative;
+  bottom: 150px;
+  left: 25px;
+}
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSx7xZCUqCoVHL6EVHc477XyKxKz-98SdZUA&usqp=CAU");
+  font-family: "Montserrat Alternates", sans-serif;
+  width: 100%;
+  background-color: rgb(154, 242, 164);
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.2);
+  text-decoration: blue;
+}
+header button {
+  height: 8.2vh;
+  width: 10vw;
+  border-radius: 20px;
+  font-size: 20px;
+  color: rgb(64, 22, 22);
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(243, 119, 97);
+  transition: ease-in-out 0.3s;
+}
+header input {
+  width: 40%;
+  height: 5vh;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.275);
+}
+header button:hover {
+  transform: scale(0.8);
+}
+.welcomeText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+  font-size: 1em;
+}
+header h1 {
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+}
+#bookCollectionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5em;
+  row-gap: 4em;
+  padding: 2em;
+  margin: auto auto 0%;
+  text-align: center;
+  height: 100%;
+}
+.searchField {
+  display: flex;
+  justify-content: space-evenly;
+  width: 35vw;
+}
+.searchField input {
+  padding: 10px;
+  width: 25vw;
+}
+.searchField button {
+  margin-top: 0%;
+  width: 7vw;
+  padding: 2px;
+  height: 7vh;
+  background: rgb(146, 189, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(5, 208, 235, 0.253) 13%,
+    rgba(4, 70, 190, 0.158) 41%,
+    rgba(15, 231, 202, 0.288) 85%
+  );
+}
+
+#buttonOnclick {
+  background-color: rgb(243, 119, 97);
+  top: -10%;
+  height: 8.2vh;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 60vh;
+}
+#NoresultSpace {
+  display: flex;
+  color: rgb(235, 233, 233);
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-family: "Rowdies", cursive;
+  height: 100%;
+}
+.bookContainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  width: 15vw;
+  border-radius: 0px;
+  background: rgb(44, 106, 107);
+  background: linear-gradient(
+    153deg,
+    rgb(146, 189, 241) 25%,
+    rgba(251, 251, 251, 0.998) 89%
+  );
+  color: rgb(0, 0, 0);
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.663);
+}
+.mainContainer > div:last-of-type button {
+  height: 5vh;
+  width: 12vw;
+  border-radius: 0px;
+  border: white;
+  font-size: 75%;
+  font-family: "Rowdies", cursive;
+  background: rgb(223, 10, 10);
+  background: linear-gradient(
+    90deg,
+    rgb(146, 189, 241) 2%,
+    rgb(146, 189, 241) 31%,
+    rgba(251, 251, 251, 0.998) 80%
+  );
+  color: rgba(0, 0, 0, 0.897);
+  transition: ease-in-out 0.3s;
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.4);
+}
+.mainContainer > div:last-of-type button:hover {
+  transform: scale(1.1);
+}
+.bookFooter {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bookFooter h1 {
+  font-size: 18px;
+  font-family: "Averia Libre", cursive;
+}
+.bookContainer img {
+  height: 30vh;
+  width: 10vw;
+  border-radius: 10px;
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+}
+footer {
+  padding: 10px;
+  background-color: rgb(170, 255, 252);
+  background-size: contain;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer img {
+  height: 50px;
+  width: 50px;
+}
+footer div {
+  width: 25vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* hr {
+  width: 100%;
+  color: blue;
+  height: 12px;
+  background-color: lightpink;
+} */
+.formcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+form {
+  height: 90vh;
+  width: 50vw;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(245, 213, 213);
+  background-image: linear-gradient(
+    to right,
+    rgba(210, 220, 123, 0.844),
+    rgba(174, 66, 210, 0.7)
+  );
+}
+input {
+  height: 3vh;
+  width: 20vw;
+  border-radius: 10px;
+  box-shadow: 0 4px 0 4px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+.form-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: fit-content;
+}
+label {
+  align-self: flex-start;
+  padding: 5px;
+  font-size: 1.5em;
+}
+.errorMessage {
+  color: red;
+  font-weight: 300;
+  padding-top: 10px;
+  align-self: flex-start;
+}
+form button {
+  height: 5vh;
+  width: 10vw;
+  border-radius: 20px;
+  border: none;
+}
+#disabledButton {
+  background: rgba(241, 11, 11, 0.5);
+  color: rgb(224, 224, 255);
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+}
+#workingButton {
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  background-color: lightgreen;
+  color: yellow;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  header button {
+    width: 50vw;
+    margin-top: 5%;
+  }
+  .searchField {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .searchField input {
+    height: 2vh;
+    width: 80%;
+  }
+  .searchField button {
+    width: 50%;
+    height: 40%;
+    margin-top: 1%;
+  }
+  #bookCollectionGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .bookContainer {
+    width: 70%;
+  }
+  .bookContainer img {
+    width: 60%;
+  }
+  .mainContainer > div:last-of-type button {
+    width: 100%;
+  }
+  #NoresultSpace {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 38bvh;
+    font-size: 80%;
+  }
+  form {
+    width: 90%;
+  }
+  .form-element {
+    width: 80%;
+  }
+  form input {
+    height: 2vh;
+    width: 100%;
+  }
+  form button {
+    height: 5vh;
+    width: 60%;
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 60, 255, 0.897);
+  }
+  #workingButton {
+    width: 40vw;
+    background-color: green;
+    color: white;
+    font-size: larger;
+    box-shadow: 0 5px 10px 0 rgba(0, 60, 255, 0.897);
+  }
+  footer {
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer img {
+    width: 25px;
+    height: 25px;
+  }
+}
